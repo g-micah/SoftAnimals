@@ -1,0 +1,267 @@
+/*-------Globals--------*/
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*-------Base Structure--------*/
+*
+{
+
+    font-family: Verdana, Geneva, sans-serif;
+}
+html, body
+{
+    
+    min-height: 100vh;
+    position: relative;
+
+}
+html body
+{
+    overflow-y: scroll;
+    padding: 56px 0px 50px;
+    background-color: #000000;
+    background-image: url("../img/background.png");
+    background-image: linear-gradient(
+        rgba(0, 0, 30, 0.1),
+        rgba(0, 0, 30, 0.1)),
+    url('../img/background.png');
+    background-attachment: fixed;
+    
+  
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/*
+main .container-lg {
+    margin-bottom: 10px;
+}
+*/
+
+/*-------Header--------*/
+
+#nav-bar
+{
+    top: 0;
+    z-index: 100;
+    border-bottom: 0px solid black;
+}
+.navbar {
+    min-height: 56px;
+    border-bottom:1px solid #000;
+    boarder-top:0px;
+}
+.navbar-custom { 
+    background-color: #343A40; 
+} 
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+    color: white; 
+} 
+.navbar-nav 
+{
+    margin: 0px;
+}
+header .navbar-brand
+{
+    font-size: 150%;
+    line-height: 0px;
+    height: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+header .navbar-brand img
+{
+    width: 40px;
+    height: 40px;
+    padding-left: 0px;
+    margin-left: 2.5px;
+    margin-right: 0px;
+}
+header #myNavbar ul
+{
+    background-color: #343A40; 
+}
+header #myNavbar .navbar-nav li
+{
+    margin: 0px 5px;
+}
+header #myNavbar .navbar-nav li a
+{
+    padding: 4px 7px;
+}
+header #myNavbar .active
+{
+    background-color: #485159;
+    color: #cccccc;
+}
+header #myNavbar .disabled
+{
+    color: #555F69;
+}
+.navbar-toggler-icon{
+	font-size: 0.8em;
+}
+
+
+
+
+
+/*-------Home--------*/
+#home 
+{
+    color: white;
+}
+#home .text-center
+{
+    margin: 0;
+    position: absolute;
+    top:45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+    padding: 20px 0px;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    );
+}
+#home h4
+{
+    padding-bottom: 10px;
+}
+
+/*-------Products--------*/
+#products 
+{
+    color: black;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    );
+     padding-bottom: 15px;
+}
+#products h2
+{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+#products .row
+{
+    border-bottom: 5px solid #000;
+    padding: 15px 0px;
+}
+
+/*-------Cart--------*/
+#cart
+{
+    color: black;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    );
+     padding-bottom: 15px;
+}
+#cart h2
+{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+#cart .row
+{
+    border-bottom: 5px solid #000;
+    padding: 15px 0px;
+}
+
+
+/*-------Sign In--------*/
+#signin
+{
+    color: white;
+    
+
+}
+#signin .text-center
+{
+    margin: 0;
+    position: absolute;
+    top:15%;
+    -ms-transform: translateY(3%);
+    transform: translateY(3%);
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    );
+    padding-bottom: 15px;
+    max-width: 530px;
+}
+.form-signin {
+  width: 100%;
+  max-width: 430px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+/*-------Sign Up--------*/
+#signup
+{
+    color: black;
+    
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    );
+    padding-bottom: 15px;
+}
+
+
+/*-------Footer--------*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;      /* Set the fixed height of the footer here */
+  line-height: 49px; /* Vertically center the text there */
+  color: #ffffff;
+  background-color: #343A40;
+  border-top:1px solid #000;
+}
+.footer > .container-lg p {
+    margin-bottom: 0;
+}
+
+table {
+    border: 1px solid #001963;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px dashed #001963;
+    padding: .2em .5em .2em .5em;
+    text-align: left;
+}
+#no_border {
+    border: 0px;
+}
+#no_border td {
+    border: 0px;
+}
