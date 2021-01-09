@@ -7,3 +7,9 @@ The app has full CRUD capabilities and supports accounts, carts per user, and pu
 
 Demo here:
 https://micahgarrison.com/projects/SoftAnimals/
+
+Demo Images:
+![DemoImage1](https://github.com/g-micah/SoftAnimals/blob/main/img/DemoImage1.png)
+![DemoImage2](https://github.com/g-micah/SoftAnimals/blob/main/img/DemoImage2.png)
+![DemoImage3](https://github.com/g-micah/SoftAnimals/blob/main/img/DemoImage3.png)
+![DemoImage4](https://github.com/g-micah/SoftAnimals/blob/main/img/DemoImage4.png)
