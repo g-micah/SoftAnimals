@@ -1,5 +1,5 @@
 # SoftAnimals
-Shopping website using CRUD for accounts and cart
+Shopping website using Bootstrap for the front end and MySQL CRUD for accounts, cart, and purchase history.
 
 Demo here:
 https://micahgarrison.com/projects/SoftAnimals/
