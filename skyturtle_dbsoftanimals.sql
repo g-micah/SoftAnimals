@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Nov 04, 2020 at 09:07 PM
--- Server version: 10.4.14-MariaDB-cll-lve
--- PHP Version: 7.2.34
+-- Host: localhost
+-- Generation Time: Mar 17, 2021 at 03:41 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u836136612_ShoppingCart`
+-- Database: `skyturtle_dbsoftanimals`
 --
 
 -- --------------------------------------------------------
@@ -33,6 +33,13 @@ CREATE TABLE `cart` (
   `user_id` int(10) UNSIGNED NOT NULL,
   `purchased` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`cart_id`, `user_id`, `purchased`) VALUES
+(10, 8, 0);
 
 -- --------------------------------------------------------
 
@@ -99,7 +106,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `fname`, `lname`, `email`, `phone`, `age`, `gender`, `address`, `address2`, `country`, `state`, `zip`, `image`) VALUES
-(1, 'g-micah', 'myPublicPass0', 'Micah', 'Garrison', 'micah@micahgarrison.com', '123-456-7890', 25, 'Male', '122 Indian Springs Rd', 'test1233', 'United States', 'Virginia', '23185', NULL);
+(1, 'g-micah', 'myPublicPass0', 'Micah', 'Garrison', 'micah@micahgarrison.com', '123-456-7890', 25, 'Male', '122 Indian Springs Rd', 'test1233', 'United States', 'Virginia', '23185', NULL),
+(8, 'guest', 'GuestPass123', 'John', 'Doe', 'johndoe@mydomain.net', '757-555-5555', 26, 'Male', '1234 Main St', '', 'United States', 'VA', '23188', NULL);
 
 --
 -- Indexes for dumped tables
@@ -142,7 +150,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `cart_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -154,7 +162,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
